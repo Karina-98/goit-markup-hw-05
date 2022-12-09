@@ -25,14 +25,14 @@
             <nav>
                
                <ul class="header-link list">
-                 <li class="nav-line-header"><a href="./index.html"class="header-link-list list  ">Студія</a>
-                  
-                </li>
-                 <li class="nav-line-header"><a href="./portfolio.html"class="header-link-list list">Портфоліо</a>
+                 <li class="link-line-header "><a href="./index.html"class="header-link-list current list  ">Студія</a>
                 
                 </li>
-                 <li class="nav-line-header"><a href=""class="header-link-list list ">Контакти</a>
-                
+                 <li class="link-line-header"><a href="./portfolio.html"class="header-link-list  list">Портфоліо</a>
+                 
+                </li>
+                 <li class="link-line-header"><a href=""class="header-link-list list ">Контакти</a>
+                 
                 </li>
                </ul>
             
@@ -65,7 +65,7 @@
             <h1 class="title">
                 Ефективні рішення для вашого бізнесу
             </h1>
-            <button type="button" class="hero-btn btn">
+            <button type="button" class="hero-btn btn" data-modal-open >
                 Замовити послугу
             </button>
             </div>
@@ -434,5 +434,19 @@
         
         </div>
     </footer>
+    <div  class="backdrop is-hidden " data-modal>
+        <div class="modal">
+            <button class=" modal-close btn">
+                <svg width="18" height="18" class="modal-svg-close" data-modal-close>
+                    <use href="./images/icons.svg.svg#icon-close-modal">
+
+                    </use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js">
+
+    </script>
 </body>
 </html>
